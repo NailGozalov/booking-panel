@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reservation.css">
+    <title>Reservation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="staff_content active" id="step_1">
+        <div class="path4"></div>
+        <!-- <div class="header_shape_3"></div> -->
+        <div class="windows">
+
+            <div class="menu">
+                <div class="selects">
+                    <div class="choosen_select">
+                        <div class="choosen_circle">
+                            <h5>1</h5>
+                        </div>
+                        <h3>Staff</h3>
+                    </div>
+
+                    <div class="select">
+                        <div class="circle">
+                            <h5>2</h5>
+                        </div>
+                        <h3>Select</h3>
+                    </div>
+
+                    <div class="select">
+                        <div class="circle">
+                            <h5>3</h5>
+                        </div>
+                        <h3>Date & Time</h3>
+                    </div>
+
+                    <div class="select">
+                        <div class="circle">
+                            <h5>4</h5>
+                        </div>
+                        <h3>Confirmation</h3>
+                    </div>
+
+                </div>
+
+                <div class="menu_footer"></div>
+            </div>
+
+            <div class="content">
+                <div class="header">
+                    <h2>Select staff</h2>
+
+                    <div class="exit_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.603 2.28545C14.1288 1.75963 14.1309 0.912055 13.6094 0.390587C13.0843 -0.134517 12.2396 -0.127988 11.7145 0.39705L7 5.1116L2.28545 0.39705C1.75963 -0.128773 0.912055 -0.130882 0.390587 0.390587C-0.134517 0.91569 -0.127988 1.76042 0.39705 2.28545L5.1116 7L0.39705 11.7145C-0.128773 12.2404 -0.130882 13.0879 0.390587 13.6094C0.91569 14.1345 1.76042 14.128 2.28545 13.603L7 8.8884L11.7145 13.603C12.2404 14.1288 13.0879 14.1309 13.6094 13.6094C14.1345 13.0843 14.128 12.2396 13.603 11.7145L8.8884 7L13.603 2.28545Z" fill="#ADBFC7"/>
+                        </svg>
+                    </div>
+                    
+                </div>
+
+                <div class="staff_windows" >
+                    <div class="worker doctor-card" data_name="Alex Rosetta" id="1">
+
+                        <div class="img_frame">
+                            <div class="img_worker1"></div>
+                        </div>
+
+                        <div class="worker_info">
+                            <h2>Alexy Rosetta</h2>
+                            <h3>alexyrosetta@egmail.com</h3>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+                <div class="staff_windows" >
+                    <div class="worker doctor-card" data_name="Maria July" id="2">
+
+                        <div class="img_frame">
+                            <div class="img_worker2"></div>
+                        </div>
+
+                        <div class="worker_info">
+                            <h2>Maria July</h2>
+                            <h3>mariajuly@egmail.com</h3>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+                <div class="footer">
+
+                    <div class="select_error">
+                        <div class="error_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 7C11.7167 7 11.479 7.096 11.287 7.288C11.095 7.48 10.9993 7.71733 11 8C11 8.28333 11.096 8.521 11.288 8.713C11.48 8.905 11.7173 9.00067 12 9C12.2833 9 12.521 8.904 12.713 8.712C12.905 8.52 13.0007 8.28267 13 8C13 7.71667 12.904 7.479 12.712 7.287C12.52 7.095 12.2827 6.99933 12 7ZM13 11H11L11 17H13L13 11ZM12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6873 6.88333 21.212 8.1C21.7367 9.31667 21.9993 10.6167 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6867 17.1167 19.9743 18.175 19.075 19.075C18.175 19.975 17.1167 20.6873 15.9 21.212C14.6833 21.7367 13.3833 21.9993 12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31233 17.1167 2.787 15.9C2.26167 14.6833 1.99933 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31233 8.1 2.787C9.31667 2.26167 10.6167 1.99933 12 2ZM12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>SELECT STAFF</h3>
+                    </div>
+                    
+                    <button type="button" id="nextButton_1" class="button_next">NEXT</button>
+                    
+                </div>
+
+
+            </div>
+
+            
+        </div>
+        
+    </div>
+
+    <div class="service_content" id="step_2">
+        <div class="path4"></div>
+        <!-- <div class="header_shape_3"></div> -->
+        <div class="windows">
+
+            <div class="menu">
+                <div class="selects">
+                    <div class="select okay">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#6C70DC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6242 8.45643L16.3564 8.24248C15.912 7.88725 15.2441 7.92685 14.8517 8.33156L10.3723 12.9509L9.02021 11.8678C8.57621 11.5122 7.90821 11.551 7.51534 11.9553L7.27859 12.1989C7.08659 12.3964 6.98691 12.6569 7.00138 12.9229C7.016 13.1889 7.14356 13.4385 7.35621 13.617L9.83469 15.7279C10.0493 15.9154 10.3369 16.0131 10.6308 15.9986C10.9247 15.9841 11.1996 15.8585 11.3916 15.651L16.7388 9.87248C16.9256 9.67059 17.0185 9.40797 16.9969 9.14244C16.9754 8.87671 16.8414 8.62999 16.6242 8.45643Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>Staff</h3>
+                    </div>
+
+                    <div class="choosen_select">
+                        <div class="choosen_circle">
+                            <h5>2</h5>
+                        </div>
+                        <h3>Select</h3>
+                    </div>
+
+                    <div class="select">
+                        <div class="circle">
+                            <h5>3</h5>
+                        </div>
+                        <h3>Date & Time</h3>
+                    </div>
+
+                    <div class="select">
+                        <div class="circle">
+                            <h5>4</h5>
+                        </div>
+                        <h3>Confirmation</h3>
+                    </div>
+
+                </div>
+
+                <div class="menu_footer"></div>
+            </div>
+
+            <div class="content">
+                <div class="header">
+                    <h2>Select service</h2>
+
+                    <div class="exit_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.603 2.28545C14.1288 1.75963 14.1309 0.912055 13.6094 0.390587C13.0843 -0.134517 12.2396 -0.127988 11.7145 0.39705L7 5.1116L2.28545 0.39705C1.75963 -0.128773 0.912055 -0.130882 0.390587 0.390587C-0.134517 0.91569 -0.127988 1.76042 0.39705 2.28545L5.1116 7L0.39705 11.7145C-0.128773 12.2404 -0.130882 13.0879 0.390587 13.6094C0.91569 14.1345 1.76042 14.128 2.28545 13.603L7 8.8884L11.7145 13.603C12.2404 14.1288 13.0879 14.1309 13.6094 13.6094C14.1345 13.0843 14.128 12.2396 13.603 11.7145L8.8884 7L13.603 2.28545Z" fill="#ADBFC7"/>
+                        </svg>
+                    </div>
+                    
+                </div>
+
+                <div class="service_windows">
+                    <div class="service" data_service="Oral hygiene" data_price="50.00" id="1">
+
+                        <div class="img_frame">
+                            <div class="img_service1"></div>
+                        </div>
+
+                        <div class="worker_info service_information">
+                            <h2>Oral hygiene</h2>
+                            <h3>1 hour</h3>
+                        </div>
+
+                        <div class="price">
+                            <h2 class="data_price">50$</h2>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+                <div class="service_windows">
+                    <div class="service" data_service="Implants" data_price="120.00" id="2">
+
+                        <div class="img_frame">
+                            <div class="img_service2"></div>
+                        </div>
+
+                        <div class="worker_info service_information">
+                            <h2>Implants</h2>
+                            <h3>1 hour 30 minutes</h3>
+                        </div>
+
+                        <div class="price">
+                            <h2 class="data_price">120$</h2>
+                        </div>
+
+                        
+                    </div>
+
+                    
+
+                </div>
+
+
+                <div class="service_windows">
+                    <div class="service" data_service="Check_up" data_price="140.00" id="3">
+
+                        <div class="img_frame">
+                            <div class="img_service3"></div>
+                        </div>
+
+                        <div class="worker_info service_information">
+                            <h2>Check up</h2>
+                            <h3>1 hour 12 minutes</h3>
+                        </div>
+
+                        <div class="price">
+                            <h2 class="data_price">140$</h2>
+                        </div>
+
+                        
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="footer">
+
+                    <button type="button" id="backButton_1" class="button_back">BACK</button>
+                    <div class="select_error_2">
+                        <div class="error_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 7C11.7167 7 11.479 7.096 11.287 7.288C11.095 7.48 10.9993 7.71733 11 8C11 8.28333 11.096 8.521 11.288 8.713C11.48 8.905 11.7173 9.00067 12 9C12.2833 9 12.521 8.904 12.713 8.712C12.905 8.52 13.0007 8.28267 13 8C13 7.71667 12.904 7.479 12.712 7.287C12.52 7.095 12.2827 6.99933 12 7ZM13 11H11L11 17H13L13 11ZM12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6873 6.88333 21.212 8.1C21.7367 9.31667 21.9993 10.6167 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6867 17.1167 19.9743 18.175 19.075 19.075C18.175 19.975 17.1167 20.6873 15.9 21.212C14.6833 21.7367 13.3833 21.9993 12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31233 17.1167 2.787 15.9C2.26167 14.6833 1.99933 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31233 8.1 2.787C9.31667 2.26167 10.6167 1.99933 12 2ZM12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>SELECT SERVICE</h3>
+                    </div>
+                    <button type="button" id="nextButton_2" class="button_next">NEXT</button>
+                    
+                </div>
+
+
+            </div>
+
+            
+        </div>
+        
+    </div>
+
+    <div class="data_time_content" id="step_3">
+        <div class="path4"></div>
+        <!-- <div class="header_shape_3"></div> -->
+        <div class="windows">
+
+            <div class="menu">
+                <div class="selects">
+                    <div class="select okay">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#6C70DC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6242 8.45643L16.3564 8.24248C15.912 7.88725 15.2441 7.92685 14.8517 8.33156L10.3723 12.9509L9.02021 11.8678C8.57621 11.5122 7.90821 11.551 7.51534 11.9553L7.27859 12.1989C7.08659 12.3964 6.98691 12.6569 7.00138 12.9229C7.016 13.1889 7.14356 13.4385 7.35621 13.617L9.83469 15.7279C10.0493 15.9154 10.3369 16.0131 10.6308 15.9986C10.9247 15.9841 11.1996 15.8585 11.3916 15.651L16.7388 9.87248C16.9256 9.67059 17.0185 9.40797 16.9969 9.14244C16.9754 8.87671 16.8414 8.62999 16.6242 8.45643Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>Staff</h3>
+                    </div>
+
+                    <div class="select okay">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#6C70DC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6242 8.45643L16.3564 8.24248C15.912 7.88725 15.2441 7.92685 14.8517 8.33156L10.3723 12.9509L9.02021 11.8678C8.57621 11.5122 7.90821 11.551 7.51534 11.9553L7.27859 12.1989C7.08659 12.3964 6.98691 12.6569 7.00138 12.9229C7.016 13.1889 7.14356 13.4385 7.35621 13.617L9.83469 15.7279C10.0493 15.9154 10.3369 16.0131 10.6308 15.9986C10.9247 15.9841 11.1996 15.8585 11.3916 15.651L16.7388 9.87248C16.9256 9.67059 17.0185 9.40797 16.9969 9.14244C16.9754 8.87671 16.8414 8.62999 16.6242 8.45643Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>Select</h3>
+                    </div>
+
+                    <div class="choosen_select">
+                        <div class="choosen_circle">
+                            <h5>3</h5>
+                        </div>
+                        <h3>Date & Time</h3>
+                    </div>
+
+                    <div class="select">
+                        <div class="circle">
+                            <h5>4</h5>
+                        </div>
+                        <h3>Confirmation</h3>
+                    </div>
+
+                </div>
+
+                <div class="menu_footer"></div>
+            </div>
+
+            <div class="content">
+                <div class="header">
+                    <h2>Select date & time</h2>
+
+                    <div class="exit_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.603 2.28545C14.1288 1.75963 14.1309 0.912055 13.6094 0.390587C13.0843 -0.134517 12.2396 -0.127988 11.7145 0.39705L7 5.1116L2.28545 0.39705C1.75963 -0.128773 0.912055 -0.130882 0.390587 0.390587C-0.134517 0.91569 -0.127988 1.76042 0.39705 2.28545L5.1116 7L0.39705 11.7145C-0.128773 12.2404 -0.130882 13.0879 0.390587 13.6094C0.91569 14.1345 1.76042 14.128 2.28545 13.603L7 8.8884L11.7145 13.603C12.2404 14.1288 13.0879 14.1309 13.6094 13.6094C14.1345 13.0843 14.128 12.2396 13.603 11.7145L8.8884 7L13.603 2.28545Z" fill="#ADBFC7"/>
+                        </svg>
+                    </div>
+                    
+                </div>
+
+                <div class="randevu_area">
+                    <div class="left_side_august" id="calendarAugust">
+                        <div class="left_side_header">
+                            <button type="button" class="calendar_prev" id="prevMonthButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 7L9 12L14 17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </button>
+                            <div class="currentMonth" id="currentMonth"><h3>August 2023</h3></div>
+                            <button type="button" class="calendar_next" id="nextMonthButton">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10 17L15 12L10 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                            </button>
+                        </div>
+
+                        <div class="calendar_area">
+                            <div class="calendar">
+                                <div class="cal_header">
+                                    <div class="day">
+                                        <h3>Sun</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Mon</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Tue</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Wed</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Thu</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Fri</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Sat</h3>
+                                    </div>
+                                </div>
+
+                                <div class="cal_body_aug">
+                                    <div class="grid_template">1</div>
+                                    <div class="grid_template">2</div>
+                                    <div class="grid_template">3</div>
+                                    <div class="grid_template randevu date-button">4</div>
+                                    <div class="grid_template randevu date-button">5</div>
+                                    <div class="grid_template randevu date-button">6</div>
+                                    <div class="grid_template">7</div>
+                                    <div class="grid_template">8</div>
+                                    <div class="grid_template">9</div>
+                                    <div class="grid_template">10</div>
+                                    <div class="grid_template">11</div>
+                                    <div class="grid_template">12</div>
+                                    <div class="grid_template">13</div>
+                                    <div class="grid_template">14</div>
+                                    <div class="grid_template">15</div>
+                                    <div class="grid_template">16</div>
+                                    <div class="grid_template">17</div>
+                                    <div class="grid_template">18</div>
+                                    <div class="grid_template">19</div>
+                                    <div class="grid_template">20</div>
+                                    <div class="grid_template">21</div>
+                                    <div class="grid_template">22</div>
+                                    <div class="grid_template">23</div>
+                                    <div class="grid_template">24</div>
+                                    <div class="grid_template">25</div>
+                                    <div class="grid_template">26</div>
+                                    <div class="grid_template">27</div>
+                                    <div class="grid_template">28</div>
+                                    <div class="grid_template">29</div>
+                                    <div class="grid_template">30</div>
+                                    <div class="grid_template">31</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+    
+                    </div>
+
+                    <div class="left_side_september" id="calendarSeptember">
+                        <div class="left_side_header">
+                            <button type="button" class="calendar_prev" id="prevMonthButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 7L9 12L14 17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </button>
+                            <div class="currentMonth" id="currentMonth"><h3>September 2023</h3></div>
+                            <button type="button" class="calendar_next" id="nextMonthButton">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10 17L15 12L10 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                            </button>
+                        </div>
+
+                        <div class="calendar_area">
+                            <div class="calendar">
+                                <div class="cal_header">
+                                    <div class="day">
+                                        <h3>Sun</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Mon</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Tue</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Wed</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Thu</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Fri</h3>
+                                    </div>
+                                    <div class="day">
+                                        <h3>Sat</h3>
+                                    </div>
+                                </div>
+
+                                <div class="cal_body_sep">
+                                    <div class="grid_template">1</div>
+                                    <div class="grid_template">2</div>
+                                    <div class="grid_template">3</div>
+                                    <div class="grid_template randevu date-button">4</div>
+                                    <div class="grid_template randevu date-button">5</div>
+                                    <div class="grid_template randevu date-button">6</div>
+                                    <div class="grid_template">7</div>
+                                    <div class="grid_template">8</div>
+                                    <div class="grid_template">9</div>
+                                    <div class="grid_template">10</div>
+                                    <div class="grid_template">11</div>
+                                    <div class="grid_template">12</div>
+                                    <div class="grid_template">13</div>
+                                    <div class="grid_template">14</div>
+                                    <div class="grid_template">15</div>
+                                    <div class="grid_template">16</div>
+                                    <div class="grid_template">17</div>
+                                    <div class="grid_template">18</div>
+                                    <div class="grid_template">19</div>
+                                    <div class="grid_template">20</div>
+                                    <div class="grid_template">21</div>
+                                    <div class="grid_template">22</div>
+                                    <div class="grid_template">23</div>
+                                    <div class="grid_template">24</div>
+                                    <div class="grid_template">25</div>
+                                    <div class="grid_template">26</div>
+                                    <div class="grid_template">27</div>
+                                    <div class="grid_template">28</div>
+                                    <div class="grid_template">29</div>
+                                    <div class="grid_template">30</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+    
+                    </div>
+    
+                    <div class="right_side">
+                        <div class="right_side_header">
+                            <h3>Time</h3>
+                        </div>
+
+                        <div class="time_area">
+                            <div class="time">
+                                <div class="time_header">
+                                    <h3>Select date</h3>
+                                </div>
+
+                                <div class="time_body">
+                                    
+                                </div>
+
+                            
+
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+
+                
+
+                <div class="footer">
+
+                    <button type="button" id="backButton_2" class="button_back">BACK</button>
+                    <div class="select_error_3">
+                        <div class="error_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 7C11.7167 7 11.479 7.096 11.287 7.288C11.095 7.48 10.9993 7.71733 11 8C11 8.28333 11.096 8.521 11.288 8.713C11.48 8.905 11.7173 9.00067 12 9C12.2833 9 12.521 8.904 12.713 8.712C12.905 8.52 13.0007 8.28267 13 8C13 7.71667 12.904 7.479 12.712 7.287C12.52 7.095 12.2827 6.99933 12 7ZM13 11H11L11 17H13L13 11ZM12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6873 6.88333 21.212 8.1C21.7367 9.31667 21.9993 10.6167 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6867 17.1167 19.9743 18.175 19.075 19.075C18.175 19.975 17.1167 20.6873 15.9 21.212C14.6833 21.7367 13.3833 21.9993 12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31233 17.1167 2.787 15.9C2.26167 14.6833 1.99933 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31233 8.1 2.787C9.31667 2.26167 10.6167 1.99933 12 2ZM12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>SELECT DATE & TIME</h3>
+                    </div>
+                    <button type="button" id="nextButton_3" class="button_next">NEXT</button>
+                    
+                </div>
+
+
+            </div>
+
+            
+        </div>
+        
+    </div>
+
+    <div class="confirm_content" id="step_4">
+        <div class="path4"></div>
+        <!-- <div class="header_shape_3"></div> -->
+        <div class="windows">
+
+            <div class="menu">
+                <div class="selects">
+                    <div class="select okay">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#6C70DC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6242 8.45643L16.3564 8.24248C15.912 7.88725 15.2441 7.92685 14.8517 8.33156L10.3723 12.9509L9.02021 11.8678C8.57621 11.5122 7.90821 11.551 7.51534 11.9553L7.27859 12.1989C7.08659 12.3964 6.98691 12.6569 7.00138 12.9229C7.016 13.1889 7.14356 13.4385 7.35621 13.617L9.83469 15.7279C10.0493 15.9154 10.3369 16.0131 10.6308 15.9986C10.9247 15.9841 11.1996 15.8585 11.3916 15.651L16.7388 9.87248C16.9256 9.67059 17.0185 9.40797 16.9969 9.14244C16.9754 8.87671 16.8414 8.62999 16.6242 8.45643Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>Staff</h3>
+                    </div>
+
+                    <div class="select okay">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#6C70DC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6242 8.45643L16.3564 8.24248C15.912 7.88725 15.2441 7.92685 14.8517 8.33156L10.3723 12.9509L9.02021 11.8678C8.57621 11.5122 7.90821 11.551 7.51534 11.9553L7.27859 12.1989C7.08659 12.3964 6.98691 12.6569 7.00138 12.9229C7.016 13.1889 7.14356 13.4385 7.35621 13.617L9.83469 15.7279C10.0493 15.9154 10.3369 16.0131 10.6308 15.9986C10.9247 15.9841 11.1996 15.8585 11.3916 15.651L16.7388 9.87248C16.9256 9.67059 17.0185 9.40797 16.9969 9.14244C16.9754 8.87671 16.8414 8.62999 16.6242 8.45643Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>Select</h3>
+                    </div>
+
+                    <div class="select okay">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#6C70DC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6242 8.45643L16.3564 8.24248C15.912 7.88725 15.2441 7.92685 14.8517 8.33156L10.3723 12.9509L9.02021 11.8678C8.57621 11.5122 7.90821 11.551 7.51534 11.9553L7.27859 12.1989C7.08659 12.3964 6.98691 12.6569 7.00138 12.9229C7.016 13.1889 7.14356 13.4385 7.35621 13.617L9.83469 15.7279C10.0493 15.9154 10.3369 16.0131 10.6308 15.9986C10.9247 15.9841 11.1996 15.8585 11.3916 15.651L16.7388 9.87248C16.9256 9.67059 17.0185 9.40797 16.9969 9.14244C16.9754 8.87671 16.8414 8.62999 16.6242 8.45643Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <h3>Date & Time</h3>
+                    </div>
+
+                    <div class="choosen_select">
+                        <div class="choosen_circle">
+                            <h5>4</h5>
+                        </div>
+                        <h3>Confirmation</h3>
+                    </div>
+
+                </div>
+
+                <div class="menu_footer"></div>
+            </div>
+
+            <div class="content">
+                <div class="header">
+                    <h2>Confirm detailes</h2>
+
+                    <div class="exit_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.603 2.28545C14.1288 1.75963 14.1309 0.912055 13.6094 0.390587C13.0843 -0.134517 12.2396 -0.127988 11.7145 0.39705L7 5.1116L2.28545 0.39705C1.75963 -0.128773 0.912055 -0.130882 0.390587 0.390587C-0.134517 0.91569 -0.127988 1.76042 0.39705 2.28545L5.1116 7L0.39705 11.7145C-0.128773 12.2404 -0.130882 13.0879 0.390587 13.6094C0.91569 14.1345 1.76042 14.128 2.28545 13.603L7 8.8884L11.7145 13.603C12.2404 14.1288 13.0879 14.1309 13.6094 13.6094C14.1345 13.0843 14.128 12.2396 13.603 11.7145L8.8884 7L13.603 2.28545Z" fill="#ADBFC7"/>
+                        </svg>
+                    </div>
+                    
+                </div>
+
+                <div class="error_4">
+                    <div class="error_4_header">
+                        <svg class="exit_error" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6.75806 17.243L12.0011 12L17.2441 17.243M17.2441 6.75696L12.0001 12L6.75806 6.75696" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                    </div>
+
+                    <p>Please, fill the all required fields!</p>
+
+                </div>
+
+                <div class="complate">
+                    <div class="complate_header">
+                        <svg class="exit_complate" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6.75806 17.243L12.0011 12L17.2441 17.243M17.2441 6.75696L12.0001 12L6.75806 6.75696" stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                    </div>
+
+                    <p>Confirmation successfully completed!</p>
+
+                </div>
+
+                <form>
+                    <div class="form_top">
+
+                        <div class="inp_name margin20">
+                            <label for="fname"> <h2>First name <span class="star">*</span></h2></label>
+                            <br>
+                            <input type="text" id="fname">
+                        </div>
+
+                        <div class="inp_lastname">
+                            <label for="flastname"><h2>Last name <span class="star">*</span></h2></label>
+                            <br>
+                            <input type="text" id="flastname">
+                        </div>
+
+
+                    </div>
+
+                    <div class="form_bottom">
+
+                        <div class="inp_email margin20">
+                            <label for="femail"> <h2>E-mail <span class="star">*</span></h2></label>
+                            <br>
+                            <input type="email" id="femail">
+                        </div>
+
+                        <div class="inp_phone">
+                            <label for="fphone"><h2>Phone</h2></label>
+                            <br>
+                            <input type="number" id="fphone">
+                        </div>
+
+                    </div>
+                </form>
+
+
+                <div class="note_header">
+                    <h3>Note</h3>
+                </div>
+                <div class="note_area">
+                    
+                    <div class="note_info">
+
+                        <div class="staff_info">
+                            <h3>Staff:</h3>
+                            <h4></h4>
+                        </div>
+
+                        <div class="service_info">
+                            <h3>Service:</h3>
+                            <h4></h4>
+                        </div>
+
+                        <div class="date_info">
+                            <h3>Date:</h3>
+                            <h4></h4>
+                        </div>
+
+                        <div class="price_info">
+                            <h3>Total:</h3>
+                            <h4 style="color:#4FBF65;"></h4>
+                        </div>  
+
+                    </div>
+
+                </div>
+
+               
+                <div class="footer">
+
+                    <button type="button" class="button_back" id="backButton_3">BACK</button>
+                    
+                    <button type="button" class="button_next" id="nextButton_4">Confirm Booking</button>
+                    
+                </div>
+
+
+            </div>
+
+            
+        </div>
+        
+    </div>
+
+    <div class="icon11">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.50006C0 11.6786 3.54286 15.0001 8 15.0001C12.4571 15.0001 16 11.6786 16 7.50006C16 3.32149 12.4571 6.10352e-05 8 6.10352e-05C3.54286 6.10352e-05 0 3.32149 0 7.50006ZM2.28571 7.50006C2.28571 4.50006 4.8 2.14292 8 2.14292C11.2 2.14292 13.7143 4.6072 13.7143 7.50006C13.7143 10.5001 11.2 12.8572 8 12.8572C4.8 12.8572 2.28571 10.5001 2.28571 7.50006Z" fill="white"/>
+            </svg>
+    </div>
+
+    <div class="icon12">
+        <svg xmlns="http://www.w3.org/2000/svg" width="526" height="460" viewBox="0 0 526 460" fill="none">
+            <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M107.992 141.801L468.178 10.6275C496.57 0.287676 525.894 -1.75464 553.523 3.2742C581.152 8.30303 607.085 20.403 628.695 38.3479C650.304 56.2928 667.59 80.0825 677.924 108.491C688.257 136.899 690.299 166.241 685.273 193.886C680.247 221.531 668.154 247.479 650.22 269.102C632.285 290.724 608.509 308.02 580.118 318.36L219.931 449.534C191.54 459.873 162.215 461.916 134.587 456.887C106.958 451.858 81.0244 439.758 59.4149 421.813C37.8053 403.868 20.5196 380.079 10.1858 351.67C-0.147888 323.262 -2.18901 293.92 2.83688 266.275C7.86277 238.63 19.9557 212.682 37.89 191.059C55.8244 169.437 79.6002 152.141 107.992 141.801Z" fill="url(#paint0_linear_1_57945)"/>
+            <defs>
+              <linearGradient id="paint0_linear_1_57945" x1="555.024" y1="41.6909" x2="280.489" y2="286.326" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7E77FF"/>
+                <stop offset="1" stop-color="white" stop-opacity="0.01"/>
+              </linearGradient>
+            </defs>
+          </svg>
+    </div>
+
+    <div class="icon13">
+        <svg xmlns="http://www.w3.org/2000/svg" width="611" height="612" viewBox="0 0 611 612" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-162.985 188.486L317.237 13.6998C355.042 -0.0604592 394.125 -2.76473 430.96 3.94477C467.795 10.6543 502.384 26.7776 531.203 50.6724C560.021 74.5673 583.071 106.234 596.827 144.03C610.584 181.825 613.282 220.899 606.565 257.728C599.848 294.557 583.715 329.141 559.81 357.958C535.906 386.775 504.229 409.825 466.423 423.585L-13.7984 598.372C-51.6043 612.132 -90.6864 614.836 -127.522 608.127C-164.357 601.417 -198.946 585.294 -227.764 561.399C-256.583 537.504 -279.633 505.838 -293.389 468.042C-307.146 430.246 -309.844 391.172 -303.127 354.343C-296.409 317.514 -280.277 282.93 -256.372 254.113C-232.467 225.296 -200.791 202.246 -162.985 188.486Z" fill="url(#paint0_linear_1_57944)"/>
+            <defs>
+              <linearGradient id="paint0_linear_1_57944" x1="600.868" y1="-72.0522" x2="14.4654" y2="429.822" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7E77FF"/>
+                <stop offset="1" stop-color="white" stop-opacity="0.1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+    </div>
+
+    <div class="icon14">
+        <svg xmlns="http://www.w3.org/2000/svg" width="92" height="460" viewBox="0 0 92 460" fill="none">
+            <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M-488.153 141.467L-127.967 10.2931C-99.5752 -0.0467146 -70.2507 -2.08905 -42.6219 2.93978C-14.993 7.96862 10.9403 20.0686 32.5498 38.0135C54.1594 55.9584 71.4451 79.7481 81.7788 108.156C92.1126 136.565 94.1537 165.906 89.1278 193.551C84.1019 221.196 72.009 247.145 54.0747 268.767C36.1404 290.389 12.3645 307.685 -16.0271 318.025L-376.213 449.199C-404.605 459.539 -433.929 461.581 -461.558 456.552C-489.187 451.524 -515.121 439.424 -536.73 421.479C-558.34 403.534 -575.625 379.744 -585.959 351.336C-596.293 322.927 -598.334 293.586 -593.308 265.941C-588.282 238.296 -576.189 212.347 -558.255 190.725C-540.321 169.103 -516.545 151.807 -488.153 141.467Z" fill="url(#paint0_linear_1_57946)"/>
+            <defs>
+              <linearGradient id="paint0_linear_1_57946" x1="84.7737" y1="-54.0134" x2="-355.266" y2="322.378" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7E77FF"/>
+                <stop offset="1" stop-color="white" stop-opacity="0.1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
